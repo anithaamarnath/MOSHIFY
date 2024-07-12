@@ -249,6 +249,11 @@ a {
   display: inline-block;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 @media screen and (min-width: 1024) {
   .btn {
     font-size: 1.5rem;
@@ -490,3 +495,52 @@ card__body {
     margin-right: 0;
   }
 }
+
+/** Callouts */
+
+.callout {
+  padding:4 rem;
+  border-radius:5px ;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.callout__heading {
+color: white;
+margin-top: 0;
+font-size: 3rem;
+}
+
+.callout .btn {
+ justify-self: center;
+ align-self: center;
+}
+
+
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--cols-2{
+    grid-template-columns: 1fr auto;
+  }
+  .callout {
+    text-align: left;
+  }
+  .callout .btn{
+    justify-self: start;
+    margin: 0 2rem;
+  }
+
+
+  .callout__heading {
+    font-size: 4rem;
+  }
+  
+}
+
